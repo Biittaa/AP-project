@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="101.0" prefHeight="33.0" prefWidth="373.0" text="Something went wrong because of:">
+         <font>
+            <Font name="Comic Sans MS" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="222.0" text="Try again" textFill="#639e11">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="121.0" layoutY="14.0" text="Error!" textFill="#ee3d3d">
+         <font>
+            <Font name="Comic Sans MS Bold" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="150.0" text="* Invalid image size (It must be at most 2 MB)">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="181.0" text="* Some problems in loading image file">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

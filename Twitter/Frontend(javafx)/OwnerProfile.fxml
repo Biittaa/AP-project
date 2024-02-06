@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo43.OwnerProfileController">
+   <opaqueInsets>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </opaqueInsets>
+   <children>
+      <TabPane layoutX="14.0" layoutY="173.0" prefHeight="413.0" prefWidth="570.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="contactInfoTab" text="Contact Info">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="567.0" style="-fx-background-color: #ffeca2;">
+                     <children>
+                        <GridPane layoutX="14.0" layoutY="43.0" prefHeight="281.0" prefWidth="520.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="142.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="297.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="89.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <TextField fx:id="profileName" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="id" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextArea fx:id="bio" layoutX="1.0" layoutY="2.0" prefHeight="42.0" prefWidth="293.0" promptText="Bio">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="location" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="website" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0" promptText="Website">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <Label text="Profile name" textFill="#2c540b">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="ID" textFill="#2c540b" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Bio" textFill="#2c540b" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Location" textFill="#2c540b" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Website" textFill="#2c540b" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                 <center>
+                                    <Text fx:id="changeProfileName" fill="#2c540b" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <center>
+                                    <Text fx:id="changeID" fill="#2c540b" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <center>
+                                    <Text fx:id="changeBio" fill="#2c540b" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <center>
+                                    <Text fx:id="changeLocation" fill="#2c540b" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <center>
+                                    <Text fx:id="changeWebsite" fill="#2c540b" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                        <Label prefHeight="36.0" prefWidth="170.0" text="Contact Info:" textFill="#d7834f">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="514.0" layoutY="345.0" mnemonicParsing="false" onAction="#resetButtonContact" prefHeight="26.0" prefWidth="49.0" style="-fx-background-color: #fc9154;" text="Reset">
+                           <font>
+                              <Font name="Comic Sans MS" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="458.0" layoutY="345.0" mnemonicParsing="false" onAction="#saveButtonContact" style="-fx-background-color: #a3d775;" text="Save">
+                           <font>
+                              <Font name="Comic Sans MS" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="14.0" layoutY="345.0" mnemonicParsing="false" onAction="#changePassword" style="-fx-background-color: #ffa063;" text="Change Password" textFill="#244d11">
+                           <font>
+                              <Font name="Comic Sans MS" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Personal Info">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="567.0" style="-fx-background-color: #ffeca2;">
+                     <children>
+                        <GridPane layoutX="14.0" layoutY="36.0" prefHeight="313.0" prefWidth="520.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="142.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="297.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="89.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="69.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <TextField fx:id="first" layoutX="1.0" layoutY="6.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="last" layoutX="1.0" layoutY="6.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField fx:id="email" layoutX="1.0" layoutY="14.0" prefHeight="25.0" prefWidth="293.0" promptText="E-mail">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                    <Text fx:id="wrongChange" layoutX="1.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="11.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="phoneNumber" layoutX="1.0" layoutY="6.0" prefHeight="25.0" prefWidth="293.0" promptText="Phone number">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="country" disable="true" layoutX="1.0" layoutY="6.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                    <MenuButton layoutX="202.0" layoutY="6.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="92.0" text="Country">
+                                      <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#chooseIran" text="Iran" />
+                                        <MenuItem mnemonicParsing="false" onAction="#chooseChina" text="China" />
+                                          <MenuItem mnemonicParsing="false" onAction="#chooseBrazil" text="Brazil" />
+                                          <MenuItem mnemonicParsing="false" onAction="#chooseGermany" text="Germany" />
+                                          <MenuItem mnemonicParsing="false" onAction="#chooseItaly" text="Italy" />
+                                          <MenuItem mnemonicParsing="false" onAction="#chooseEngland" text="England" />
+                                          <MenuItem mnemonicParsing="false" onAction="#chooseUS" text="US" />
+                                          <MenuItem mnemonicParsing="false" onAction="#chooseNone" text="None" />
+                                      </items>
+                                       <font>
+                                          <Font name="Comic Sans MS" size="14.0" />
+                                       </font>
+                                    </MenuButton>
+                                 </children>
+                              </AnchorPane>
+                              <Label textFill="#2c540b">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="First name" textFill="#2c540b">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Last name" textFill="#2c540b" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="E-mail" textFill="#2c540b" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Phone number" textFill="#2c540b" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Country" textFill="#2c540b" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Date of birth" textFill="#2c540b" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <DatePicker fx:id="bornDate" layoutY="3.0" prefHeight="42.0" prefWidth="295.0" promptText="Month/Day/Year" />
+                                 </children>
+                              </AnchorPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                 <center>
+                                    <Text fx:id="changeFirst" fill="#51680d" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <center>
+                                    <Text fx:id="changeLast" fill="#51680d" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <center>
+                                    <Text fx:id="changeEmail" fill="#51680d" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <center>
+                                    <Text fx:id="changePhone" fill="#51680d" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <center>
+                                    <Text fx:id="changeCountry" fill="#51680d" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                              <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <center>
+                                    <Text fx:id="changeBornDate" fill="#51680d" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="54.0" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </center>
+                              </BorderPane>
+                           </children>
+                        </GridPane>
+                        <Label prefHeight="36.0" prefWidth="177.0" text="Personal Info:" textFill="#d7834f">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="514.0" layoutY="345.0" mnemonicParsing="false" onAction="#resetButtonPersonal" prefHeight="26.0" prefWidth="49.0" style="-fx-background-color: #fc9154;" text="Reset">
+                           <font>
+                              <Font name="Comic Sans MS" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="458.0" layoutY="345.0" mnemonicParsing="false" onAction="#saveButtonPersonal" style="-fx-background-color: #a3d775;" text="Save">
+                           <font>
+                              <Font name="Comic Sans MS" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#onTweetsPressed" text="Tweets">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="tweetVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="102.0" text="Tweets:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#onReTweetsPressed" text="Retweets">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="ReTweetVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="124.0" text="Retweets:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#followerList" text="Followers">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="followerVBox" prefHeight="384.0" prefWidth="560.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="136.0" text="Followers" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children></VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#followingList" text="Followings">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="followingVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="133.0" text="Followings:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#blackList" text="Black List">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="blackVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="134.0" text="Black List:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="header" fitHeight="150.0" fitWidth="570.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" />
+      <ImageView fx:id="avatar" fitHeight="80.0" fitWidth="80.0" layoutX="478.0" layoutY="20.0" pickOnBounds="true" />
+      <Button layoutX="222.0" layoutY="122.0" mnemonicParsing="false" onAction="#setInfo" prefHeight="33.0" prefWidth="140.0" style="-fx-background-color: #9fd37f;" text="Refresh Profile" textAlignment="CENTER" textFill="#dd5c2d">
+         <font>
+            <Font name="Comic Sans MS Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="462.0" layoutY="139.0" mnemonicParsing="false" onAction="#setHeader" style="-fx-background-color: #ffc284;" text="change/set header" textFill="#455e13">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="462.0" layoutY="111.0" mnemonicParsing="false" onAction="#setAvatar" prefHeight="23.0" prefWidth="111.0" style="-fx-background-color: #ffc284;" text="change/set avatar" textFill="#455e13">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </Button>
+      <Label fx:id="name" layoutX="14.0" layoutY="118.0" style="-fx-background-color: #ffdb80;" text="contact name" textFill="#5e7915">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButton" onMouseClicked="#backButton" style="-fx-background-color: #cbe3a8;" text="back" textFill="#ba4613">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

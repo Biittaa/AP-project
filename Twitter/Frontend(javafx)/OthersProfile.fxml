@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo43.OthersProfileController">
+   <opaqueInsets>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </opaqueInsets>
+   <children>
+      <TabPane layoutX="14.0" layoutY="173.0" prefHeight="413.0" prefWidth="570.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="contactInfoTab" text="Contact Info">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="381.0" prefWidth="567.0" style="-fx-background-color: #ffeca2;">
+                     <children>
+                        <GridPane layoutX="14.0" layoutY="43.0" prefHeight="281.0" prefWidth="520.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="142.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.0" minWidth="10.0" prefWidth="297.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="10.0" prefWidth="89.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <TextField fx:id="id" editable="false" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextArea fx:id="bio" editable="false" layoutX="1.0" layoutY="2.0" prefHeight="42.0" prefWidth="293.0" promptText="Bio">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextArea>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <TextField editable="false" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <TextField fx:id="website" editable="false" layoutX="1.0" layoutY="9.0" prefHeight="25.0" prefWidth="293.0" promptText="Website">
+                                       <font>
+                                          <Font name="Comic Sans MS" size="20.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <Label text="ID" textFill="#2c540b">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Bio" textFill="#2c540b" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Location" textFill="#2c540b" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Website" textFill="#2c540b" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Comic Sans MS" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </GridPane>
+                        <Label prefHeight="36.0" prefWidth="170.0" text="Contact Info:" textFill="#d7834f">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab onSelectionChanged="#onTweetsPressed" text="Tweets">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="tweetVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="102.0" text="Tweets:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#onReTweetsPressed" text="Retweets">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="ReTweetVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="124.0" text="Retweets:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#followerList" text="Followers">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="followerVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="124.0" text="Followers:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab onSelectionChanged="#followingList" text="Followings">
+               <content>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="404.0" prefWidth="578.0" style="-fx-background-color: #ffeca2;" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="followingVBox" prefHeight="383.0" prefWidth="557.0" style="-fx-background-color: #ffeca2;">
+                           <children>
+                              <Label prefHeight="36.0" prefWidth="133.0" text="Followings:" textFill="#d7834f">
+                                 <font>
+                                    <Font name="Comic Sans MS Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fx:id="header" fitHeight="150.0" fitWidth="570.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" />
+      <ImageView fx:id="avatar" fitHeight="80.0" fitWidth="80.0" layoutX="476.0" layoutY="31.0" pickOnBounds="true" />
+      <Button layoutX="230.0" layoutY="123.0" mnemonicParsing="false" onAction="#recieveData" prefHeight="33.0" prefWidth="140.0" style="-fx-background-color: #9fd37f;" text="Refresh Profile" textAlignment="CENTER" textFill="#dd5c2d">
+         <font>
+            <Font name="Comic Sans MS Italic" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="26.0" prefWidth="48.0" style="-fx-background-color: ffeca2;" text="Back">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></Button>
+      <Button fx:id="block" layoutX="177.0" layoutY="18.0" mnemonicParsing="false" onAction="#block" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #d1e89e;" text="Block" textFill="#dd5c2d">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="name" layoutX="14.0" layoutY="118.0" style="-fx-background-color: #ffdb80;" text="contact name" textFill="#5e7915">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="follow" layoutX="80.0" layoutY="18.0" mnemonicParsing="false" onAction="#follow" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #d1e89e;" text="Follow" textFill="#dd5c2d">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

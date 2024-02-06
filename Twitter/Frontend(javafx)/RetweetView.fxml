@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" spacing="30.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo43.RetweetView">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#onBackButtonPressed" prefHeight="54.0" prefWidth="68.0">
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\Lenovo\IdeaProjects\demo14\src\main\resources\com\example\demo14\arrow-ios-back.png" />
+                     </image></ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <Label prefHeight="98.0" prefWidth="422.0" style="-fx-background-color: orange;" text="          Add Quote">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" prefHeight="102.0" prefWidth="439.0">
+         <VBox.margin>
+            <Insets left="30.0" right="30.0" top="10.0" />
+         </VBox.margin>
+      </TextArea>
+      <Button fx:id="enterButton" onAction="#onEnterButtonPressed" mnemonicParsing="false" style="-fx-background-color: pink;" text="Done" />
+   </children>
+</VBox>
