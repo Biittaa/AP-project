@@ -55,8 +55,6 @@ public class OthersProfileController {
 
     @FXML
     private Button follow;
-    //  @FXML
-    // private TextField location;
 
     void setContactInfo() {
         if (u.getProfile().getHeader() != null)
@@ -75,8 +73,7 @@ public class OthersProfileController {
         id.setText(u.getID());
         if (u.getProfile().getBio() != null)
             bio.setText(u.getProfile().getBio());
-        //if (u.getProfile().getLocation() != null)
-        //location.setText(u.getProfile().getLocation());
+        
         if (u.getProfile().getWebsite() != null)
             website.setText(u.getProfile().getWebsite());
         if (Client.controller.getUser().getAbility().checkIfBlocked(u)) {
@@ -117,7 +114,6 @@ public class OthersProfileController {
         Node preNode = (Node) e.getSource();
         Stage preStage = (Stage) preNode.getScene().getWindow();
         String id = (String) preStage.getUserData();
-        //u = Client.controller.searchUserByID(id);
         setContactInfo();
     }
 
