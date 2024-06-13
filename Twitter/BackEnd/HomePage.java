@@ -53,15 +53,6 @@ public class HomePage {
         vbox.setStyle("-fx-background-color: white");
         vbox.setPrefHeight(500);
         vbox.setPrefWidth(500);
-       tweetsList.add("hjjjvfjvkfcnbnfkbkfnbnfkntbktngfuuui\nhuuhhuhu");
-       tweetsList.add("hellouiuiuihiuouirjfijgifjigjtij\nuuuhuuihuhgygyhgyg\nuyyyt6ytyu\n");
-       tweetsList.add("hello\nhuuhugiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\nguhugugyteufudgfjgjfgnf");
-       tweetsList.add("hello\nyhjijjjij\njijiiijijiijrigirjtrt\nhuhuyyrdrfyguhujhyhuftfgvgvgf\n");
-       commentList.add("hjhj");
-       commentList.add("hjhjllllllllllllllllllllll");
-       commentList.add("hjhj\nij\njjjjjjjjjjjjjjjjjjj\nh\nj");
-       commentList.add("hjhjpllllllllllllllllllllllllllllllll");
-       commentList.add("hjhjhjhhhjhuhuhjsdjnsjfnejdbefjbdbdbvjur");*/
         ArrayList<Tweet> timeLineTweets;
         timeLineTweets = (Client.controller.showTimeLine());
         toolBar.setCenterShape(true);
@@ -335,7 +326,6 @@ public class HomePage {
                 String text = textField.getText();
                 Label label2 = new Label("comment saved!");
                 Tweet t0 = Client.controller.addComment(t, text);
-                //resetUserTweet(t);
                 BorderPane h = displayTweet(stage, t0, c);
                 vbox2.getChildren().add(comments.size() + 1, h);
                 vbox2.getChildren().addAll(label2);
