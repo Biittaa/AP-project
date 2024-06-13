@@ -157,7 +157,6 @@ public class SearchView {
         }
         imageView.setOnMouseClicked(e -> {
             OthersProfileController o = new OthersProfileController();
-           // o.setU(u);
             OthersProfileController.setU(u,imageView.getScene());
             o.show();
 
