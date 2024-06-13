@@ -15,8 +15,8 @@ import java.util.ArrayList;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-       /* //FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        //Parent root = fxmlLoader.load();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        Parent root = fxmlLoader.load();
         BorderPane borderPane = new BorderPane();
         ToolBar toolBar = new ToolBar();
         Button button1 = new Button("TimeLine");
@@ -29,15 +29,6 @@ public class HelloApplication extends Application {
         ArrayList<String> tweetsList = new ArrayList<>();
         ArrayList<String> commentList = new ArrayList<>();
         tweetsList.add("hello");
-        tweetsList.add("hjjjvfjvkfcnbnfkbkfnbnfkntbktngfuuui\nhuuhhuhu");
-        tweetsList.add("hellouiuiuihiuouirjfijgifjigjtij\nuuuhuuihuhgygyhgyg\nuyyyt6ytyu\n");
-        tweetsList.add("hello\nhuuhugiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\nguhugugyteufudgfjgjfgnf");
-        tweetsList.add("hello\nyhjijjjij\njijiiijijiijrigirjtrt\nhuhuyyrdrfyguhujhyhuftfgvgvgf\n");
-        commentList.add("hjhj");
-        commentList.add("hjhjllllllllllllllllllllll");
-        commentList.add("hjhj\nij\njjjjjjjjjjjjjjjjjjj\nh\nj");
-        commentList.add("hjhjpllllllllllllllllllllllllllllllll");
-        commentList.add("hjhjhjhhhjhuhuhjsdjnsjfnejdbefjbdbdbvjur");
         System.out.println(tweetsList.size());
          toolBar.getItems().addAll(button1, button2, button3, button4);
         borderPane.setBottom(toolBar);
@@ -106,7 +97,7 @@ public class HelloApplication extends Application {
             TextField textField = new TextField("Search");
             vBox3.getChildren().addAll(textField);
             stage.setScene(searchScene);
-        });*/
+        });
     }
     private class ButtonHandler implements EventHandler<ActionEvent>{
         private Button button;
