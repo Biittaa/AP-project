@@ -62,18 +62,6 @@ public class Profile implements Serializable {
     public void setAvatar(String avatarFile) {
         avatar = avatarFile;
         WritingFile.writingUsers();
-        /*Path avatarPath = Paths.get(avatarFile);
-        try {
-            if (Files.size(avatarPath) / 2048 > 1) {
-                return -1;
-            } else {
-                avatar = avatarFile;
-                setLastChange();
-                return 0;
-            }
-        } catch (IOException e) {
-            return -2;
-        }*/
     }
 
     public void setHeader(String headerFile) {
@@ -89,7 +77,7 @@ public class Profile implements Serializable {
             }
         } catch (IOException e) {
             return -2;
-        }*/
+        }
     }
 
     public int setBio(String bio) {
