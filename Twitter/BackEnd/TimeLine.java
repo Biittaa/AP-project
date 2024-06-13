@@ -63,7 +63,6 @@ public class TimeLine {
             tweets.addAll(p.getAbility().getTweets());
         }
         for (Tweet t : tweets) {
-            //&& !u.getAbility().checkIfBlocked(t.getUser())
             if (t.getLikes() >= 10 && !u.getAbility().checkIfBlocked(t.getUser())) {
                 StarTweets.add(t);
             }
