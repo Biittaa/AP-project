@@ -43,7 +43,6 @@ public class NewTweetView {
 
     @FXML
     void onFieldEntered(ActionEvent event) {
-        //TextArea field = (TextArea) event.getSource();
         postButton.setDisable(false);
     }
 
@@ -79,7 +78,6 @@ public class NewTweetView {
                 ObservableList<Node> images = imageVBox.getChildren();
                 for(Node n : images){
                     if(n instanceof ImageView){
-                        //System.out.println(((ImageView) n).getImage().getUrl().toString());
                         imageAddress.add(((ImageView) n).getImage().getUrl().toString());
                     }
                 }
@@ -112,8 +110,7 @@ public class NewTweetView {
                 imageView.setFitWidth(200);
                 imageView.setFitHeight(250);
                 vbox.getChildren().addAll(imageView);
-                // gridPane.getChildren().addAll(imageView);
-                //gridPane.add(imageView,i,j);
+             
             }
             WritingFile.writingUsers();
         }
