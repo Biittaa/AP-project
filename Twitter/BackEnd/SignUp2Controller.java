@@ -90,14 +90,11 @@ public class SignUp2Controller {
 	@FXML
 	void nextButton(ActionEvent e) throws IOException {
 		if (checkBeforeNext()) {
-			//Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
-			//Scene scene = new Scene(root);
 			HomePage h =new HomePage();
 			System.out.println("ok");
 			h.TimeLine();
 			System.out.println("bye");
-			//Client.stage.setScene(HomePage.timeLineScene);
-			//Client.stage.show();
+			
 		}
 	}
 }
