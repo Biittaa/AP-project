@@ -14,7 +14,6 @@ public class Client extends Application {
     private static BufferedReader bufferedReader;
     private static BufferedWriter bufferedWriter;
     private static ObjectInputStream objectReader;
-    //private Controller controller;
     public static Stage stage;
     static Controller controller;
 
