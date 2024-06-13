@@ -81,8 +81,7 @@ public class OwnerProfileController {
     @FXML
     private TextField last;
 
-    // @FXML
-    // private TextField location;
+ 
 
     @FXML
     private Label name;
@@ -190,8 +189,6 @@ public class OwnerProfileController {
         id.setText(Client.controller.getUser().getID());
         if (Client.controller.getUser().getProfile().getBio() != null)
             bio.setText(Client.controller.getUser().getProfile().getBio());
-        //if (u.getProfile().getLocation() != null)
-        //location.setText(u.getProfile().getLocation());
         if (Client.controller.getUser().getProfile().getWebsite() != null)
             website.setText(Client.controller.getUser().getProfile().getWebsite());
         WritingFile.writingUsers();
@@ -256,14 +253,9 @@ public class OwnerProfileController {
         File selectedFile = fc.showOpenDialog(Client.stage);
         if (selectedFile != null) {
             Client.controller.getUser().getProfile().setHeader(selectedFile.toURI().toString());
-            //if (checkHeader == 0) {
             Image selectedImage = new Image(selectedFile.toURI().toString());
             header.setImage(selectedImage);
-            //}
-            //else {
-            //	ImageError ir = new ImageError("HeaderError.fxml", "Invalid Header File");
-            //	ir.start(new Stage());
-            //}
+         
         }
         WritingFile.writingUsers();
     }
@@ -277,14 +269,8 @@ public class OwnerProfileController {
         File selectedFile = fc.showOpenDialog(Client.stage);
         if (selectedFile != null) {
             Client.controller.getUser().getProfile().setAvatar(selectedFile.toURI().toString());
-            //if (checkAvatar == 0) {
             Image selectedImage = new Image(selectedFile.toURI().toString());
             avatar.setImage(selectedImage);
-            //}
-            //else {
-            //ImageError ir = new ImageError("AvatarError.fxml", "Invalid Avatar File");
-            //ir.start(new Stage());
-            //}
         }
         WritingFile.writingUsers();
     }
@@ -324,10 +310,6 @@ public class OwnerProfileController {
                 changeBio.setText("*invalid length!");
             }
         }
-    	/*if (!location.getText().equals(u.getProfile().getLocation())) {
-    		u.getProfile().setLocation(location.getText());
-    		changeLocation.setText("Changes Saved!");
-    	}*/
         if (!website.getText().equals(Client.controller.getUser().getProfile().getWebsite())) {
             Client.controller.getUser().getProfile().setWebsite(website.getText());
             changeWebsite.setText("Changes Saved!");
@@ -479,8 +461,6 @@ public class OwnerProfileController {
     @FXML
     void backButton() throws IOException {
         Client.stage.setScene(lastScene);
-        //HomePage h = new HomePage();
-       // h.TimeLine();
         WritingFile.writingUsers();
     }
 
@@ -563,7 +543,6 @@ public class OwnerProfileController {
 
     @FXML
     void followingList() {
-//		Enter.readUsers();
         ObservableList<Node> children = followingVBox.getChildren();
         deleteUsers(children);
         HashSet<User> following = Client.controller.getCurrentUserFollowings();
@@ -588,7 +567,6 @@ public class OwnerProfileController {
 
     @FXML
     void followerList() {
-//		Enter.readUsers();
         ObservableList<Node> children = followerVBox.getChildren();
         deleteUsers(children);
         HashSet<User> follower = Client.controller.getCurrentUserFollowers();
